@@ -4,6 +4,7 @@
 variable "gcp_project" {
   description = "The name of the GCP project to use"
   type        = string
+  default     = "app1-1237690"
 }
 
 // ----------------------------------------------------------------------------
@@ -12,7 +13,7 @@ variable "gcp_project" {
 variable "cluster_name" {
   description = "Name of the Kubernetes cluster to create"
   type        = string
-  default     = ""
+  default     = "test-jenkins-x"
 }
 
 variable "cluster_location" {
